@@ -1,0 +1,14 @@
+name: Smoke test
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print status
+        run: echo "GitHub Actions is running"
